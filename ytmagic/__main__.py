@@ -73,6 +73,7 @@ Examples:
   
   Author: Owais shafi
   Username: @Meowahaha
+  To upgrade ytmagic, run: pipx upgrade ytmagic
   For more details, visit: https://pypi.org/project/ytmagic/
               """,
         formatter_class=argparse.RawTextHelpFormatter
