@@ -141,6 +141,12 @@ ytmagic -a -q best -p ~/Music https://youtu.be/example
 
 This downloads the best audio, converts it to MP3, and saves it in your Music folder.
 
+## To upgrade ytmagic:
+
+```bash
+pipx upgrade ytmagic
+```
+
 ---
 
 ## 👨‍🔧 Built With
