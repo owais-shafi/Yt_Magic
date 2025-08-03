@@ -141,7 +141,3 @@ This downloads the best audio, converts it to MP3, and saves it in your Music fo
 ## 📜 License
 
 MIT License — free for personal or commercial use.
-
-```
-
-```
