@@ -65,7 +65,6 @@ def main():
         description="🎥 Download videos or extract audio from YouTube, Instagram, Facebook, TikTok, X (Twitter), and more — easily and fast.",
         epilog="""
 Examples:
-  ytmagic -v or ytmagic --version                  # Show Current version
   ytmagic https://youtu.be/example1                # Best video+audio(saved into Downloads folder)
   ytmagic https://youtu.be/example1 -q 360         # Download 360p
   ytmagic https://youtu.be/example2 -q 720         # Download 720p
@@ -86,9 +85,6 @@ Examples:
                         help="Download location (default: ~/Downloads)")
     parser.add_argument("-a", "--audio", action="store_true",
                         help="Download audio only and convert to MP3")
-    parser.add_argument("-v", "--version", action="version", version="ytmagic 1.0.9",
-                        help="Show the version of ytmagic")
-
 
     args = parser.parse_args()
     download_video(args.url, args.quality, args.path, audio_only=args.audio)
