@@ -86,7 +86,7 @@ Examples:
                         help="Download location (default: ~/Downloads)")
     parser.add_argument("-a", "--audio", action="store_true",
                         help="Download audio only and convert to MP3")
-    parser.add_argument("-v", "--version", action="version", version="ytmagic 1.1.0",
+    parser.add_argument("-v", "--version", action="version", version="ytmagic 1.1.4",
                         help="Show the version of ytmagic")
 
 

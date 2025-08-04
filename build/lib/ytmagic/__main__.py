@@ -72,7 +72,7 @@ Examples:
   ytmagic https://youtu.be/example3 -a             # Download and convert to MP3
   ytmagic -a https://youtu.be/exapmple4 -p ~/Music # Audio to custom folder
   
-  Author: Owais shafi
+  Owner: Owais shafi
   Username: @Meowahaha
   To upgrade ytmagic, run: pipx upgrade ytmagic
   For more details, visit: https://pypi.org/project/ytmagic/
