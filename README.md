@@ -136,6 +136,79 @@ pipx upgrade ytmagic
 
 ---
 
+## 📱 Run on Android (via Termux)
+
+Yes — `ytmagic` works on Android too using [Termux](https://f-droid.org/packages/com.termux/)!
+
+### ✅ Steps to Set It Up:
+
+1. **Install Termux** from Play store.
+
+2. Open Termux and run:
+
+   ```bash
+   pkg update && pkg upgrade
+   pkg install python ffmpeg termux-api
+   pip install pipx
+   pipx ensurepath
+   source ~/.bashrc  # Or restart Termux
+   ```
+
+3. **Install ytmagic**:
+
+   ```bash
+   pipx install ytmagic
+   ```
+
+4. **Grant storage access** to Termux:
+
+   ```bash
+   termux-setup-storage
+   ```
+
+5. To **save downloads to your phone storage**, use:
+
+   ```bash
+   ytmagic -p /sdcard/Download/ <URL>
+   ```
+
+6. To **make media files appear in your music/video apps**, run:
+
+   ```bash
+   termux-media-scan /sdcard/Download/
+   ```
+
+7. (Optional) Add handy **shortcuts** by editing your bash config:
+
+   ```bash
+   nano ~/.bashrc
+   ```
+
+   Add these lines at the end:
+
+   ```bash
+   alias sc='termux-media-scan /sdcard/Music/'
+   alias yt='ytmagic -p /sdcard/Download/'
+   ```
+
+   Then save and apply:
+
+   ```bash
+   source ~/.bashrc
+   ```
+
+### 🔁 After Every Download
+
+Run:
+
+```bash
+sc
+```
+
+to make the audio/video visible in your media apps. Without this, downloaded files might not appear in players.
+
+---
+
 ## 👨‍🔧 Built With
 
 - [Python](https://www.python.org/)
